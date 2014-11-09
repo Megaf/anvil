@@ -24,7 +24,7 @@ minetest.register_node("megaf_anvil:anvil", {
 		}
 	}
   inventory_image = {"anvil_inventory.png"},
-  groups = {crumbly=2, falling_node=1}
+  groups = {crumbly=2, falling_node=1},
   drop = 'transparent_nodes:transparent_blue',
   legacy_mineral = true,
   sounds = default.node_sound_stone_defaults(),
