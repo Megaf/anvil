@@ -1,5 +1,5 @@
 -- Anvil mod. By Megaf.
-minetest.register_node("megaf_anvil:anvil", {
+minetest.register_node("anvil:anvil", {
   description = "Falling Anvil",
 	tiles = {
 		"default_wood.png",
@@ -21,22 +21,19 @@ minetest.register_node("megaf_anvil:anvil", {
 			{-0.1875, -0.4375, -0.375, 0.1875, -0.375, 0.4375}, -- NodeBox8
 			{-0.25, -0.5, -0.5, 0.25, -0.4375, 0.5}, -- NodeBox9
 			{-0.0625, -0.1875, -0.25, 0.0625, 0, 0.125}, -- NodeBox10
-		}
-	}
-  inventory_image = {"anvil_inventory.png"},
-  groups = {crumbly=2, falling_node=1},
-  drop = 'transparent_nodes:transparent_blue',
-  legacy_mineral = true,
-  sounds = default.node_sound_stone_defaults(),
-  damage_per_second = 16,  
+			},
+		},
+	groups = {crumbly=2, falling_node=1},
+	drop = 'anvil:anvil',
+	legacy_mineral = true,
+	damage_per_second = 20,  
 })
 
 minetest.register_craft({
-  output = 'megaf_anvil:anvil',
+  output = 'anvil:anvil',
     recipe = {
     {'default:steel_block', 'default:steel_block'},
     {'default:steel_ingot', 'default:steel_ingot'},
     {'default:wood', 'default:wood'},
     }
 })
-
