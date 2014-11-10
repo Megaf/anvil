@@ -2,12 +2,12 @@
 minetest.register_node("anvil:anvil", {
   description = "Falling Anvil",
 	tiles = {
-		"default_wood.png",
-		"default_wood.png",
-		"default_wood.png",
-		"default_wood.png",
-		"default_wood.png",
-		"default_wood.png"
+		"anvil.png",
+		"anvil.png",
+		"anvil.png",
+		"anvil.png",
+		"anvil.png",
+		"anvil.png"
 	},
 	drawtype = "nodebox",
 	paramtype = "light",
@@ -23,7 +23,7 @@ minetest.register_node("anvil:anvil", {
 			{-0.0625, -0.1875, -0.25, 0.0625, 0, 0.125}, -- NodeBox10
 			},
 		},
-	groups = {crumbly=2, falling_node=1},
+	groups = {cracky=2, falling_node=1},
 	drop = 'anvil:anvil',
 	legacy_mineral = true,
 	damage_per_second = 20,  
@@ -32,7 +32,7 @@ minetest.register_node("anvil:anvil", {
 minetest.register_craft({
   output = 'anvil:anvil',
     recipe = {
-    {'default:steel_block', 'default:steel_block'},
+    {'default:steelblock', 'default:steelblock'},
     {'default:steel_ingot', 'default:steel_ingot'},
     {'default:wood', 'default:wood'},
     }
