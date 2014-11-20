@@ -37,3 +37,4 @@ minetest.register_craft({
     {'default:wood', 'default:wood'},
     }
 })
+print('[anvil] loaded.')
