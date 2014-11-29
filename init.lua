@@ -1,14 +1,7 @@
 -- Anvil mod. By Megaf.
 minetest.register_node("anvil:anvil", {
   description = "Falling Anvil",
-	tiles = {
-		"anvil.png",
-		"anvil.png",
-		"anvil.png",
-		"anvil.png",
-		"anvil.png",
-		"anvil.png"
-	},
+	tiles = {"anvil.png"},
 	drawtype = "nodebox",
 	paramtype = "light",
 	node_box = {
